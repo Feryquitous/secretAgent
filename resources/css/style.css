@@ -1,177 +1,220 @@
-    html {
-        font-size: 18px;
-        color: white;
-        font-family: Helvetica;
-    }
+html {
+    font-size: 18px;
+    color: white;
+    font-family: Helvetica;
+}
 
-    html,
-    body {
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        padding: 0px;
-        overflow-x: hidden;
-    }
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
 
-    .company {
-        align-content: center;
-        background-color: black;
-    }
+.company {
+    align-content: center;
+    background-color: black;
+}
 
-    .company img {
-        margin-left: 0.5rem;
-        margin-right: 1rem;
-        height: 1.5rem;
-    }
+.company img {
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+    height: 1.5rem;
+}
 
-    .company .container {
-        align-items: center;
-        display: flex;
-        font-size: 1rem;
-        padding: 0.66rem 0;
-        width: 960px;
-        margin: 0 auto;
-    }
+.company .container {
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+    padding: 0.66rem 0;
+    width: 960px;
+    margin: 0 auto;
+}
 
+.container {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.main-banner {
+    display: flex;
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+    height: 25rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-banner .container {
+    margin: 9rem auto auto auto;
+}
+
+.headline {
+    display: flex;
+    width: 20rem;
+    align-items: flex-start;
+    background-color: black;
+    padding: 2rem 3rem;
+    font-weight: bold;
+    flex-direction: column;
+}
+
+.headline h4 {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+}
+
+.headline h1 {
+    display: block;
+    font-size: 2rem;
+}
+
+nav {
+    background-color: firebrick;
+    align-content: center;
+}
+
+nav .container {
+    margin: 0 auto;
+    padding: 0.75rem 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.products {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 3rem auto;
+}
+
+.product {
+    display: flex;
+    border: 4px solid black;
+    width: 30%;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.product .description {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 0.5rem 0rem;
+}
+
+.product-image {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0rem;
+    height: 9rem;
+}
+
+.product-image img {
+    max-height: 100%;
+    width: auto;
+}
+
+.business-info {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.info .title {
+    padding: 1rem 2rem;
+    display: block;
+    background-color: black;
+    color: white;
+    margin-bottom: 0.3rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 5rem;
+    padding: 2rem 0;
+    text-align: left;
+}
+
+.mobile-nav.container {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
     .container {
-        display: flex;
-        width: 960px;
-        margin: 0 auto;
-    }
-
-    .main-banner {
-        display: flex;
-        background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
-        height: 25rem;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-    .main-banner .container {
-        margin: 9rem auto auto auto;
-    }
-
-    .headline {
-        display: flex;
-        width: 20rem;
-        align-items: flex-start;
-        background-color: black;
-        padding: 2rem 3rem;
-        font-weight: bold;
-        flex-direction: column;
-    }
-
-    .headline h4 {
-        display: block;
-        margin-bottom: 0.25rem;
-        font-size: 1rem;
-    }
-
-    .headline h1 {
-        display: block;
-        font-size: 2rem;
-    }
-
-    nav {
-        background-color: firebrick;
-        align-content: center;
-    }
-
-    nav .container {
-        margin: 0 auto;
-        padding: 0.75rem 0rem;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .products {
-        display: flex;
         width: 100%;
-        justify-content: space-between;
-        margin: 3rem auto;
     }
-
-    .product {
-        display: flex;
-        border: 4px solid black;
-        width: 30%;
-        flex-direction: column;
-        overflow: hidden;
-        justify-content: center;
-    }
-
-    .product .description {
-        display: flex;
-        background-color: black;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        padding: 0.5rem 0rem;
-    }
-
-    .product-image {
-        display: flex;
-        justify-content: center;
-        padding: 2rem 0rem;
-        height: 9rem;
-    }
-
-    .product-image img {
-        max-height: 100%;
-        width: auto;
-    }
-
-    .business-info {
-        display: flex;
-        justify-content: space-between;
-        color: black;
-        width: 100%;
-        margin-bottom: 4rem;
-    }
-
-    .info {
-        display: flex;
-        flex-direction: column;
-        width: 35%;
-    }
-
-    .info .title {
-        padding: 1rem 2rem;
-        display: block;
-        background-color: black;
-        color: white;
-        margin-bottom: 0.3rem;
-    }
-
-    footer {
-        display: flex;
-        align-items: center;
-        background-color: black;
-        height: 5rem;
-        padding: 2rem 0;
-        text-align: left;
-    }
-
     .mobile-nav.container {
+        display: flex;
+        justify-content: center;
+    }
+    #desktop-container {
         display: none;
     }
-
-    @media only screen and (max-width: 1024px) {
-        .container {
-            width: 100%;
-        }
-        .mobile-nav.container {
-            display: flex;
-            justify-content: center;
-        }
-        #desktop-container {
-            display: none;
-        }
-        .product {
-            width: 47%;
-        }
-        .product.glasses {
-            display: none;
-        }
+    .product {
+        width: 47%;
     }
+    .product.glasses {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:470px) {
+    .main-banner .container {
+        margin-top: 10rem;
+        height: auto;
+        width: 100%;
+    }
+    .headline {
+        padding: 1rem 2rem;
+    }
+    .headline h4 {
+        font-size: 0.77rem;
+    }
+    .headline h1 {
+        font-size: 1rem;
+    }
+    .main-banner {
+        height: 15rem;
+    }
+    .product.watch {
+        display: none;
+    }
+    .product {
+        width: 90%;
+    }
+    .business-info {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .info {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+    .products {
+        justify-content: center;
+    }
+    footer .container {
+        display: flex;
+        justify-content: center;
+    }
+}
